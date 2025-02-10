@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josemilio Salazar - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -35,12 +36,22 @@
             font-size: 18px;
             font-weight: normal;
             color: #555;
+            margin-bottom: 10px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
             margin-bottom: 20px;
         }
-        p {
-            font-size: 16px;
-            color: #444;
-            line-height: 1.5;
+        .icon-link {
+            font-size: 20px;
+            color: #777; /* Light grey */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .icon-link:hover {
+            color: #333; /* Darker grey on hover */
         }
         .download-btn {
             display: inline-block;
@@ -76,19 +87,24 @@
 </head>
 <body>
     <div class="container">
-        <!-- Profile Picture (PNG File) -->
+        <!-- Profile Picture -->
         <img src="profile.png" alt="Josemilio Salazar" class="profile-pic">
 
         <h1>Josemilio Salazar</h1>
         <h2>Aspiring CPA | Accounting & Financial Analysis</h2>
 
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="mailto:josemilio.salazar@gmail.com" class="icon-link"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/josemilio-salazar-05b459123/" target="_blank" class="icon-link"><i class="fab fa-linkedin-in"></i></a>
+        </div>
 
-        <!-- Embedded PDF in a cleaner box -->
+        <!-- Embedded PDF -->
         <div class="resume-box">
             <iframe src="resume.pdf"></iframe>
         </div>
 
-        <!-- Centered Download Button -->
+        <!-- Download Button -->
         <a href="resume.pdf" download class="download-btn">Download Resume (PDF)</a>
     </div>
 </body>
