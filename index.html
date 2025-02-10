@@ -3,44 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josemilio's Resume</title>
+    <title>Josemilio Salazar - Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 50px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.5;
         }
         .download-btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 25px;
             font-size: 18px;
             color: white;
             background: #007bff;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 20px; /* Adds space between PDF and button */
+            margin-top: 20px;
+            font-weight: bold;
+            transition: background 0.3s ease;
         }
         .download-btn:hover {
             background: #0056b3;
         }
-        iframe {
-            width: 80%;
+        .resume-box {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 800px;
             height: 600px;
+            background: white;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
             border: none;
-            display: block;
-            margin: 20px auto; /* Centers the iframe */
         }
     </style>
 </head>
 <body>
-    <h1>Josemilio Salazar</h1>
-    <p>Aspiring CPA | Accounting & Financial Analysis</p>
-    <p>View or download my resume below:</p>
+    <div class="container">
+        <h1>Josemilio Salazar</h1>
+        <p>Aspiring CPA | Accounting & Financial Analysis</p>
+        <p>Welcome to my professional portfolio. I am an aspiring CPA with a strong foundation in accounting, taxation, and financial analysis. My expertise includes leveraging data analytics, financial modeling, and compliance strategies to drive business growth and efficiency.</p>
+        <p>Below, you can view and download my latest resume.</p>
 
-    <!-- Embedded PDF -->
-    <iframe src="resume.pdf"></iframe>
+        <!-- Embedded PDF in a cleaner box -->
+        <div class="resume-box">
+            <iframe src="resume.pdf"></iframe>
+        </div>
 
-    <!-- Centered Download Button -->
-    <a href="resume.pdf" download class="download-btn">Download Resume (PDF)</a>
+        <!-- Centered Download Button -->
+        <a href="resume.pdf" download class="download-btn">Download Resume (PDF)</a>
+    </div>
 </body>
 </html>
